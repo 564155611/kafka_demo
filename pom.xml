@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fanx.kafka</groupId>
+    <artifactId>kafka_demo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>kafka_chapter01_helloworld</module>
+        <module>kafka_chapter02_produceranalysis</module>
+        <module>kafka_chapter02_selfserializer</module>
+        <module>kafka_chapter02_selfpartitioner</module>
+        <module>kafka_chapter02_selfproducerinterceptor</module>
+        <module>kafka_chapter02_producerinterceptorchain</module>
+        <module>kafka_chapter03_consumeranalysis</module>
+        <module>kafka_chapter03_selfdeserializer</module>
+        <module>kafka_chapter03_selfserialbyprotostuff</module>
+        <module>kafka_chapter03_selfconsumerinterceptor</module>
+        <module>kafka_chapter03_multiconsumerthread</module>
+        <module>kafka_chapter04_clientbasicapply</module>
+        <module>kafka_chapter04_policyvalidate</module>
+        <module>kafka_chapter07_rebalancelistenerwithstickyassignor</module>
+        <module>kafka_chapter07_selfassignor</module>
+        <module>kafka_chapter07_transaction</module>
+        <module>kafka_chapter10_monitor</module>
+        <module>kafka_chapter09_streams</module>
+        <module>kafka_chapter11_ttl</module>
+        <module>kafka_chapter12_wordcount</module>
+        <module>kafka_chapter12_integratewithsparkstreaming</module>
+        <module>kafka_chapter12_structuredstreaming</module>
+        <module>kafka_chapter12_integratewithstructuredstreaming</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <compilerArguments>
+                        <bootclasspath>${env.JAVA_HOME8}/jre/lib/rt.jar</bootclasspath>
+                    </compilerArguments>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+</project>

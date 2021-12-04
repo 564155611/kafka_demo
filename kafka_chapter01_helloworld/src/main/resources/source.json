@@ -1,0 +1,12 @@
+{
+  "name": "local-file-distribute-sink",
+  "config": {
+    "topic": "topic-distribute-source",
+    "connector.class": "FileStreamSink",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "converter.interval.key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "converter.interval.value.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "file": "/opt/app/kafka_2.11-2.0.0/distribute-sink.txt"
+  }
+}

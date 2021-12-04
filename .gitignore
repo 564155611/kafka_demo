@@ -1,0 +1,26 @@
+# Project exclude paths
+/kafka_chapter01_helloworld/target/
+/kafka_chapter02_produceranalysis/target/
+/kafka_chapter02_producerinterceptorchain/target/
+/kafka_chapter02_selfpartitioner/target/
+/kafka_chapter02_selfproducerinterceptor/target/
+/kafka_chapter02_selfserializer/target/
+/kafka_chapter03_consumeranalysis/target/
+/kafka_chapter03_multiconsumerthread/target/
+/kafka_chapter03_selfconsumerinterceptor/target/
+/kafka_chapter03_selfdeserializer/target/
+/kafka_chapter03_selfserialbyprotostuff/target/
+/kafka_chapter04_clientbasicapply/target/
+/kafka_chapter04_policyvalidate/target/
+/kafka_chapter07_rebalancelistenerwithstickyassignor/target/
+/kafka_chapter07_selfassignor/target/
+/kafka_chapter07_transaction/target/
+/kafka_chapter09_streams/target/
+/kafka_chapter10_monitor/target/
+/kafka_chapter11_ttl/target/
+/kafka_chapter12_integratewithsparkstreaming/target/
+/kafka_chapter12_integratewithstructuredstreaming/target/
+/kafka_chapter12_structuredstreaming/target/
+/kafka_chapter12_wordcount/target/
+/out/
+/target/
